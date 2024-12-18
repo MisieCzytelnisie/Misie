@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Cherry+Bomb+One&family=Chewy&family=Concert+One&family=DynaPuff&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Modak&family=Permanent+Marker&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,9 +28,10 @@
         </div>
         <div class="przycisk" id="przycisk">&#9776;</div>
             <ul class="menu" id="menu">
-                <li>Social Media</li>
-                <li>O Nas</li>
-                <li>Projekt</li>
+                <li><a href="#Wydarzenia">Wydarzenia</a></li>
+                <li><a href="#Social">Social Media</a></li>
+                <li><a href="#nas">O nas</a></li>
+                <li><a href="#Projekt">Projekt</a></li>
             </ul>
         
     </nav>
@@ -46,7 +47,7 @@
 
 
         </div>
-        <div class="fot"><img src="fot.jpg"></div>
+        <div class="fot"><img src="fot.jpg" id="nas"></div>
 
         <div class="flex">
 
@@ -80,7 +81,7 @@
 
 </main>
 <div class="spacer fale"></div>
-<div class="dark">
+<div class="dark" id="Projekt">
   <div>
         <div class="okno d1">
         <h2>Nasze Działania</h2>
@@ -112,7 +113,7 @@
 
 </div>
 <div>
-    <div class="okno d4">
+    <div class="okno d4" id="Social">
         <h2>Nasze Social Media:</h2>
 
         <div class="socials-container">
@@ -138,7 +139,37 @@
 </div>
 </div>
 
+<div class="spacer2 fale2"></div>
 
+<div class="blue" id="Wydarzenia">
+    <div class="okno wydarzenie">
+        <div class="img2">
+          <img src="przedszkole.jpg" >
+        </div>
+        <div>
+        <h1>Nasze pierwsze wyjście</h1>
+        <p>
+          W ramach Ogólnopolskiej Olimpiady Zwolnieni z Teorii zespół Misie_Czytelnisie w składzie: Alicja Potyra, Zuzanna Potyra, Emilia Laskowska, Zofia Władzińska, Patryk Pacholec oraz liderka Oliwia Wojciechowska, promuje czytelnictwo wśród dzieci i młodzieży. Mentorem jest p. Edyta Kacprowicz, a w projekcie wspierają nas p. Angelika Chabrowska i p. Agnieszka Karwowska. Działania projektu wspiera Biblioteka Szkolna. 3 grudnia 2024 r. przedstawicielki zespołu Misie_Czytelnisie …
+        </p>
+    </div>
+      </div>
+
+<div class="okno wydarzenie" style="display: block;">
+    <div class="img2">
+        <img src="ogloszenie.jpg" >
+    </div>
+    <h1></h1>
+    <p>Cześć! Zachęcamy do wsparcia naszej akcji „Przynieś książkę dla maluszka” więcej informacji w poście</p>
+</div>
+
+<div class="wydarzenie">
+    <div class="img2">
+
+    </div>
+    <h1></h1>
+    <p></p>
+</div>
+</div>
 <footer>
     <p>&copy; 2024 Misie Czytelnisie. Wszelkie prawa zastrzeżone.</p>
 </footer>
@@ -149,14 +180,10 @@
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 });
 
-</script>
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0C31Q9P05"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-T0C31Q9P05');
+
+
+
 </script>
 </body>
 </html>

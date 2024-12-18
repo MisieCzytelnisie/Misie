@@ -12,6 +12,10 @@ html, body{
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+ }
 
 /*Tlo*/
 
@@ -320,10 +324,23 @@ section{
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 2200px;
+    top: 2100px;
     height: 400px;
     z-index: 13;
 }
+.spacer2 {
+    aspect-ratio: 960/300;
+    width:  100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 4800px;
+    height: 400px;
+    z-index: 13;
+    rotate: 180deg;
+}
+
 
 .okno{
     background: #383838;
@@ -378,7 +395,7 @@ footer {
     }
 
     .fot{
-        width: 800px;
+        width: 1000px;
         height: auto;
         margin: 30px 30px;
         border-radius: 100px;
@@ -406,7 +423,8 @@ footer {
     .dark{
         padding-top: 0px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        padding-bottom: 100px;
     }
     .okno{
         width: 550px;
@@ -416,6 +434,8 @@ footer {
         font-size: 20px;
     }
 }
+
+
 
 
 .typing-text{
@@ -449,7 +469,7 @@ footer {
 
 @keyframes cursor{
     to{
-        border-left: 3px solid rgba(255, 255, 255, 0);
+        border-left: 3px solid rgba(54, 49, 49, 0);
     }
 }
 
@@ -480,6 +500,7 @@ footer {
     background: #252525;
     padding-top: 200px;
     font-family: "Playwrite DE Grund", serif;
+    padding-bottom: 200px;
 }
 
 
@@ -488,7 +509,9 @@ footer {
     background-image: url(fale1.svg);
 }
 
-
+.fale2{
+    background-image: url(fale1.svg);
+}
 
 .d3{
     text-align: center;
@@ -562,5 +585,76 @@ footer {
     opacity: 1;
   }
 
+.blue{
+    height: auto;
+    background: linear-gradient(20deg, #e3a7ff, rgb(69, 202, 255), rgb(243, 152, 255));
+    padding-top: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+}
+.wydarzenie p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
 
+@media (min-width: 820px) {
+    .spacer2{
+        top: 2350px;
+    }
+    .wydarzenie {
+        display: flex;
+        flex-direction: row; 
+        width: fit-content;
+        height: fit-content;
+        align-items: flex-start; 
+        gap: 20px;
+    }
+    .wydarzenie p{
+        max-width: 500px;
+        margin-top: 20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .wydarzenie h1{
+        width: auto;
+    }
+    .img2 img {
+      max-width: 500px;
+      height: auto;
+      display: block;
+    }
+    
+}
+
+.img2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .blue .okno{
+    padding: 30px;
+
+  }
+
+  @media (max-width: 1700px) {
+    .okno { 
+        width: 500px;
+    }
+}
+
+a {
+    display: inline-block; /* Ważne dla działania transformacji */
+    text-decoration: none; /* Usuwa podkreślenie, opcjonalnie */
+    color: #fff; /* Kolor tekstu */
+    transition: transform 0.3s ease, color 0.3s ease; /* Płynne przejście */
+}
+
+a:hover {
+    transform: scale(1.2); /* Powiększenie linku */
+    color: #b700ff; /* Opcjonalna zmiana koloru */
+}
 
