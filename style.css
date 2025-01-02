@@ -324,7 +324,7 @@ section{
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 2100px;
+    top: 2120px;
     height: 400px;
     z-index: 13;
 }
@@ -335,7 +335,7 @@ section{
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 4800px;
+    top: 4650px;
     height: 400px;
     z-index: 13;
     rotate: 180deg;
@@ -346,13 +346,14 @@ section{
     background: #383838;
     box-shadow: 0 30px 32px 0 rgba(0,0,0, 0.37);
     border-radius: 20px;
-    margin: 30px 30px;
+    margin: 20px 10px;
     color: #ffffff;
     font-weight: 100;
     padding: 20px 50px;
     font-size: 18px;
-    width:auto;
+    width:fit-content;
     height: auto;
+    max-width: 95%;
 }
 
 
@@ -429,6 +430,7 @@ footer {
     .okno{
         width: 550px;
         font-size: 22px;
+        margin: 20px 20px;
     }
     footer{
         font-size: 20px;
@@ -498,9 +500,9 @@ footer {
     width: 100%;
     height: auto;
     background: #252525;
-    padding-top: 200px;
+    padding-top: 100px;
     font-family: "Playwrite DE Grund", serif;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 
@@ -603,7 +605,7 @@ footer {
 
 @media (min-width: 820px) {
     .spacer2{
-        top: 2350px;
+        top: 2250px;
     }
     .wydarzenie {
         display: flex;
@@ -627,7 +629,9 @@ footer {
       height: auto;
       display: block;
     }
-    
+    .blue{
+        padding-top: 300px;
+    }
 }
 
 .img2 img {
