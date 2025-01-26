@@ -36,6 +36,7 @@
         </div>
         <div class="przycisk" id="przycisk">&#9776;</div>
             <ul class="menu" id="menu">
+                <li><a href="biblioterapia.html">Biblioterapia</a></li>
                 <li><a href="#Wydarzenia">Wydarzenia</a></li>
                 <li><a href="#Social">Social Media</a></li>
                 <li><a href="#nas">O nas</a></li>
@@ -150,33 +151,60 @@
 <div class="spacer2 fale2"></div>
 
 <div class="blue" id="Wydarzenia">
-    <div class="okno wydarzenie">
-        <div class="img2">
-          <img src="przedszkole.jpg" >
+    <div class="left column">
+
+        <div class="okno wydarzenie">
+            <div class="img2">
+                <img src="przedszkole.jpg" alt="Przedszkole">
+            </div>
+            <h1>Nasze pierwsze wyjście</h1>
+            <p class="text">
+                W ramach Ogólnopolskiej Olimpiady Zwolnieni z Teorii zespół Misie_Czytelnisie w składzie: Alicja Potyra, Zuzanna Potyra, Emilia Laskowska, Zofia Władzińska, Patryk Pacholec oraz liderka Oliwia Wojciechowska, promuje czytelnictwo wśród dzieci i młodzieży. Mentorem jest p. Edyta Kacprowicz, a w projekcie wspierają nas p. Angelika Chabrowska i p. Agnieszka Karwowska. Działania projektu wspiera Biblioteka Szkolna. 3 grudnia 2024 r. przedstawicielki zespołu Misie_Czytelnisie …
+            </p>
+            <button class="toggle-text">Czytaj więcej</button>
         </div>
-        <div>
-        <h1>Nasze pierwsze wyjście</h1>
-        <p>
-          W ramach Ogólnopolskiej Olimpiady Zwolnieni z Teorii zespół Misie_Czytelnisie w składzie: Alicja Potyra, Zuzanna Potyra, Emilia Laskowska, Zofia Władzińska, Patryk Pacholec oraz liderka Oliwia Wojciechowska, promuje czytelnictwo wśród dzieci i młodzieży. Mentorem jest p. Edyta Kacprowicz, a w projekcie wspierają nas p. Angelika Chabrowska i p. Agnieszka Karwowska. Działania projektu wspiera Biblioteka Szkolna. 3 grudnia 2024 r. przedstawicielki zespołu Misie_Czytelnisie …
-        </p>
-    </div>
-      </div>
 
-<div class="okno wydarzenie" style="display: block;">
-    <div class="img2">
-        <img src="ogloszenie.jpg" >
-    </div>
-    <h1></h1>
-    <p>Cześć! Zachęcamy do wsparcia naszej akcji „Przynieś książkę dla maluszka” więcej informacji w poście</p>
-</div>
+        <div class="okno wydarzenie" style="display: block;">
+            <div class="img2">
+                <img src="mis.jpg" >
+            </div>
+            <h1>Miś – wierny towarzysz dzieciństwa i symbol ciepła, teraz pomaga w promowaniu czytelnictwa! 🧸📚</h1>
+            <p class="text">Cześć! W tym poście pokazujemy, dlaczego miś jest idealnym symbolem naszej akcji Misie_Czytelnisie. Razem z nim zachęcamy was do odkrywania magii książek. Wiecej informacji szukajcie na naszym facebooku. 📖✨ </p>
+            <button class="toggle-text">Czytaj więcej</button>
+        </div>
 
-<div class="wydarzenie">
-    <div class="img2">
 
     </div>
-    <h1></h1>
-    <p></p>
-</div>
+    <div class="center column">
+
+        <div class="okno wydarzenie" style="display: block;">
+            <div class="img2">
+                <img src="ogloszenie.jpg" >
+            </div>
+            <h1></h1>
+            <p class="text">Cześć! Zachęcamy do wsparcia naszej akcji „Przynieś książkę dla maluszka” więcej informacji w poście</p>
+            <button class="toggle-text">Czytaj więcej</button>
+        </div>
+
+    </div>
+    <div class="right column">
+
+        <div class="okno wydarzenie" style="display: block;">
+            <div class="img2">
+                <img src="ksiazka.jpg" >
+            </div>
+            <h1>“Twoja książka, Twój vibe – co wybierasz?” 📖✨</h1>
+            <p class="text">Dzisiaj przedstawiamy Wam pomysł na to, jak książki mogą mówić więcej o Was, niż Wam się wydaje. Może to być tajemniczy świat pełen przygód, historia o miłości, która porusza serce, albo opowieść, która inspiruje do działania. A może coś jeszcze innego?<br><br>
+                Każda książka ma swój wyjątkowy klimat, który możemy zabrać ze sobą i uczynić częścią naszego życia. Książki to nie tylko historie – to emocje, inspiracje i małe fragmenty magii. 🕊️💫<br><br>
+                Podzielcie się w komentarzach, jaką książkę wybieracie, i pokażcie, co najlepiej oddaje Wasz vibe! Czekamy na Wasze odpowiedzi. 🌸</p>
+                <button class="toggle-text">Czytaj więcej</button>
+        </div>
+
+       
+
+
+    </div>
+
 </div>
 <footer>
     <p>&copy; 2024 Misie Czytelnisie. Wszelkie prawa zastrzeżone.</p>
@@ -188,7 +216,22 @@
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".toggle-text");
 
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                const textElement = button.previousElementSibling;
+                textElement.classList.toggle("expanded");
+
+                if (textElement.classList.contains("expanded")) {
+                    button.textContent = "Zwiń tekst";
+                } else {
+                    button.textContent = "Czytaj więcej";
+                }
+            });
+        });
+    });
 
 
 
