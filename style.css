@@ -215,6 +215,7 @@ ul{
     nav{
         padding: 20px 0px;
         width: 100%;
+        
     }
     h1{
         margin: 0;
@@ -225,6 +226,7 @@ ul{
         width: 100px;
         height: 100px;
     }
+  
 }
 .icon{
     width: 20%;
@@ -607,7 +609,21 @@ footer {
     max-width: 380px;
 
   }
-
+/* Do momentu naprawienia na telefonie */
+  @media (max-width: 820px) {
+    .fale{
+        display: none;
+    }
+    .fale2{
+        display: none;
+    }
+    .blue{
+        padding-top: 40px;
+    }
+    .manifest{
+        margin-bottom: 40px;
+    }
+  }
 
 @media (min-width: 820px) {
     .spacer2{
@@ -638,6 +654,7 @@ footer {
     .blue .okno{
         max-width: 500px;
     }
+    
 }
 
 .wydarzenie .text {
