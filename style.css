@@ -733,14 +733,3 @@ video{
         height:500px;
     }
 }
-
-img {
-    display: inline-block; /* Ważne dla działania transformacji */
-    text-decoration: none; /* Usuwa podkreślenie, opcjonalnie */
-    color: #fff; /* Kolor tekstu */
-    transition: transform 0.3s ease, color 0.3s ease; /* Płynne przejście */
-}
-
-img:hover {
-    transform: scale(1.1); 
-}
